@@ -6,8 +6,6 @@ var Title1
 var Title2
 var Title3
 
-var test
-
 var CurrentAnnouncement
 
 function UpdateVideos() {
@@ -49,7 +47,9 @@ function GetVideos() {
         Title1= response.Videos[0].Title
         Title2 = response.Videos[1].Title
         Title3 = response.Videos[2].Title
-        CurrentAnnouncement = response.CurrentAnnouncement[1].Message
+        
+        CurrentAnnouncement = response.CurrentAnnouncement[0].Message
+        
         console.log("Done")
         UpdateVideos()
     })})
