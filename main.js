@@ -6,6 +6,8 @@ var Title1
 var Title2
 var Title3
 
+var test
+
 var CurrentAnnouncement
 
 function UpdateVideos() {
