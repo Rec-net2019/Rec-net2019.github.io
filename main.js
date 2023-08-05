@@ -30,7 +30,7 @@ function UpdateVideos() {
 }
 
 function GetVideos() {
-    f = fetch("https://ogfishiesyt.github.io/RR2020.github.io/CommunityBoard.json",).then((a)=>{a.json().then((response) => {
+    f = fetch("https://recroom2019.github.io/CommunityBoard.json",).then((a)=>{a.json().then((response) => {
         video1 = response.Videos[0].BlobName
         video2 = response.Videos[1].BlobName
         video3 = response.Videos[2].BlobName
