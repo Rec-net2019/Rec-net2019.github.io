@@ -6,11 +6,14 @@ var Title1
 var Title2
 var Title3
 
+var CurrentAnnouncement
+
 function UpdateVideos() {
     console.log("Running")
     div1 = document.getElementById("1")
     div2 = document.getElementById("2")
     div3 = document.getElementById("3")
+    div4 = document.getElementById("4")
 
     titleele1 = div1.getElementsByTagName("h1")[0]
     titleele2 = div2.getElementsByTagName("h1")[0]
@@ -19,6 +22,12 @@ function UpdateVideos() {
     videoele1 = div1.getElementsByTagName("video")[0]
     videoele2 = div2.getElementsByTagName("video")[0]
     videoele3 = div3.getElementsByTagName("video")[0]
+
+    CurrentAnnouncement = div4..getElementsByTagName("h1")[0]
+
+    CurrentAnnouncement.innerHTML = CurrentAnnouncement
+
+    
 
     titleele1.innerHTML = Title1
     titleele2.innerHTML = Title2
@@ -38,6 +47,7 @@ function GetVideos() {
         Title1= response.Videos[0].Title
         Title2 = response.Videos[1].Title
         Title3 = response.Videos[2].Title
+        CurrentAnnouncement = response.CurrentAnnouncement[1].Message
         console.log("Done")
         UpdateVideos()
     })})
